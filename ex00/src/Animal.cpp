@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 21:48:54 by francesca         #+#    #+#             */
-/*   Updated: 2026/01/09 10:09:30 by francesca        ###   ########.fr       */
+/*   Updated: 2026/01/27 14:28:25 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ Animal::~Animal(){
     std::cout << GREEN << "ANIMAL Destructor called." << std::endl;
 }
 
-void Animal::makeSound(){
+void Animal::makeSound()const {
     std::cout << YELLOW << "Default Animal doesn't do any sounds!" << std::endl;
 }
 

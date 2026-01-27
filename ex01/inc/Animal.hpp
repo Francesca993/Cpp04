@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   Animal1.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 21:45:00 by francesca         #+#    #+#             */
-/*   Updated: 2026/01/09 10:22:05 by francesca        ###   ########.fr       */
+/*   Updated: 2026/01/27 14:33:54 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ANIMAL1_HPP
-#define ANIMAL1_HPP
+#ifndef ANIMAL_HPP
+#define ANIMAL_HPP
 
 //–––––––––––––––––––––––––––––
 // Colors for Output

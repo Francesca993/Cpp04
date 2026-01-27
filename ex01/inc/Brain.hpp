@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Brain.hpp                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/09 09:43:37 by francesca         #+#    #+#             */
-/*   Updated: 2026/01/09 10:41:34 by francesca        ###   ########.fr       */
+/*   Updated: 2026/01/27 15:00:43 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@
 #include <iostream>
 #include <string>
 #include <sstream>
-#include "Animal1.hpp"
+#include "Animal.hpp"
 
 class Brain{
     protected:

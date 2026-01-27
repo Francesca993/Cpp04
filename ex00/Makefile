@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: francesca <francesca@student.42.fr>        +#+  +:+       +#+         #
+#    By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/04 21:38:50 by francesca         #+#    #+#              #
-#    Updated: 2026/01/04 22:30:58 by francesca        ###   ########.fr        #
+#    Updated: 2026/01/27 12:50:34 by fmontini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
