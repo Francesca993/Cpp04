@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
+/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 22:11:35 by francesca         #+#    #+#             */
-/*   Updated: 2026/01/28 15:08:28 by fmontini         ###   ########.fr       */
+/*   Updated: 2026/01/29 11:55:56 by francesca        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,12 @@ Cat::~Cat(){
 
 void Cat::makeSound()const {
     std::cout << BLUE << "Cat does: MIAO MIAO!" << RESET << std::endl;
+}
+
+std::string Cat::getIdea(int index) const{
+    return(this->_brain->getIdea(index));
+}
+
+void Cat::setIdea(int index, std::string idea){
+    this->_brain->setIdea(index, idea);
 }
