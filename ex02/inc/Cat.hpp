@@ -1,0 +1,39 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Cat.hpp                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/01/04 22:14:58 by francesca         #+#    #+#             */
+/*   Updated: 2026/01/29 11:55:26 by francesca        ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef CAT_HPP
+#define CAT_HPP
+
+#include "Animal.hpp"
+#include <iostream>
+#include <string>
+#include "Brain.hpp"
+
+class Cat : public Animal{
+    private:
+    Brain *_brain;
+    
+    public:
+    Cat();
+    Cat(const Cat& other);
+    Cat& operator=(const Cat& other);
+    ~Cat();
+
+    void makeSound() const;
+    
+    //Getters
+    void printIdeas() const;
+    std::string getIdea(int index) const;
+    void setIdea(int index, std::string idea);
+};
+
+#endif

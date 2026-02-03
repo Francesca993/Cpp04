@@ -6,7 +6,7 @@
 #    By: francesca <francesca@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/04 21:38:50 by francesca         #+#    #+#              #
-#    Updated: 2026/01/29 15:26:06 by francesca        ###   ########.fr        #
+#    Updated: 2026/01/29 15:00:15 by francesca        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ OBJS		:=	$(patsubst $(SRCS_DIR)/%.cpp,$(OBJS_DIR)/%.o,$(SRCS))
 #–––––––––––––––––––––––––––––
 # Compiler and Flags
 #–––––––––––––––––––––––––––––
-NAME		=	Animals01
+NAME		=	Animals02
 CXX			=	c++
 CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98 -I$(INC_DIR)
 RM			=	rm -f
@@ -86,18 +86,6 @@ $(NAME):		$(OBJS)
 				@echo "$(CYAN)║                         $(YELLOW)\"Because cats don't bark...\" 🔊$(CYAN)                                       ║$(RESET)"
 				@echo "$(CYAN)║                                                                                               ║$(RESET)"
 				@echo "$(CYAN)╚═══════════════════════════════════════════════════════════════════════════════════════════════╝$(RESET)"
-				@echo ""
-				@echo "$(MAGENTA)╔═══════════════════════════════════════════════════════════════════════════════════════════════╗$(RESET)"
-				@echo "$(MAGENTA)║                                                                                               ║$(RESET)"
-				@echo "$(MAGENTA)║$(YELLOW)                                  MODULE SPECIFICATIONS                                        $(MAGENTA)║$(RESET)"
-				@echo "$(MAGENTA)║                                                                                               ║$(RESET)"
-				@echo "$(MAGENTA)║                    Topic................: $(GREEN)Subtype Polymorphism$(MAGENTA)                                ║$(RESET)"
-				@echo "$(MAGENTA)║                    Concepts.............: $(GREEN)Virtual Functions & Inheritance$(MAGENTA)                     ║$(RESET)"
-				@echo "$(MAGENTA)║                    Standard.............: $(GREEN)C++98$(MAGENTA)                                               ║$(RESET)"
-				@echo "$(MAGENTA)║                                                                                               ║$(RESET)"
-				@echo "$(MAGENTA)║                    Status...............: $(GREEN)[✓ READY TO COMPILE]$(MAGENTA)                                ║$(RESET)"
-				@echo "$(MAGENTA)║                                                                                               ║$(RESET)"
-				@echo "$(MAGENTA)╚═══════════════════════════════════════════════════════════════════════════════════════════════╝$(RESET)"
 				@echo ""
 				@echo "$(GREEN)→ Executable: $(NAME)$(RESET)"
 				@echo "$(GREEN)→ Run with: ./$(NAME)$(RESET)\n"
