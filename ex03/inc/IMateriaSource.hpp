@@ -6,7 +6,7 @@
 /*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/02 16:40:37 by francesca         #+#    #+#             */
-/*   Updated: 2026/02/02 21:01:48 by francesca        ###   ########.fr       */
+/*   Updated: 2026/02/04 09:19:58 by francesca        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ class IMateriaSource
 
 /*
 • learnMateria(AMateria*)
-CopiestheMateriapassedasaparameterandstoresitinmemorysoitcanbecloned
+CopiestheMateriapassedasaparameter and stores it in memory so it can be cloned
 later. Like the Character, the MateriaSourcecan know at most 4 Materias. They
 are not necessarily unique.
 • createMateria(std::string const &)

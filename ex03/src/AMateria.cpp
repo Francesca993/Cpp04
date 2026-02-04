@@ -6,7 +6,7 @@
 /*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/02 18:30:54 by francesca         #+#    #+#             */
-/*   Updated: 2026/02/02 21:02:58 by francesca        ###   ########.fr       */
+/*   Updated: 2026/02/04 10:40:14 by francesca        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ void AMateria::use(ICharacter& target){
     std::cout << RED << "AMateria Defaulte use() does Nothing! Target: " << &target << RESET << std::endl;
 }
 /*
-        /* The use(ICharacter&) member function will display:
+        The use(ICharacter&) member function will display:
         • Ice: "* shoots an ice bolt at <name> *"
         • Cure: "* heals <name>’s wounds *"
         

@@ -6,15 +6,17 @@
 /*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/02 18:17:27 by francesca         #+#    #+#             */
-/*   Updated: 2026/02/02 18:23:21 by francesca        ###   ########.fr       */
+/*   Updated: 2026/02/04 09:18:29 by francesca        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "AMateria.hpp"
 #include"ICharacter.hpp"
-#include "IMateriaSource.hpp"
+#include "MateriaSource.hpp"
 #include "Character.hpp"
-#
+#include "Debug.hpp"
+#include "Ice.hpp"
+#include "Cure.hpp"
 
 int main()
 {
