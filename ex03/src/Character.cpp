@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Character.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/02 21:09:26 by francesca         #+#    #+#             */
-/*   Updated: 2026/02/04 10:41:11 by francesca        ###   ########.fr       */
+/*   Updated: 2026/02/04 14:24:44 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,21 @@ Character &Character::operator=(const Character& other){
 Character::Character(const Character& other) 
 {
     //std::cout << MAGENTA << "Character Copy Constructor Called " << RESET << std::endl;
-    *this = other;
+    for(int i = 0; i < INVENTARYMAX; i++)
+    {
+        _inventary[i] = NULL;
+    }
+    for(int j = 0; j < MAXINVTODELETE; j++)
+    {
+        _invToDelet[j] = NULL;
+    }
+        for (int i = 0; i < INVENTARYMAX; i++)
+    {
+    if (other._inventary[i])
+            this->_inventary[i] = other._inventary[i]->clone();
+    }
+    this->_name = other._name;
+    this->count = 0;
 }
 
 Character::~Character(){
@@ -123,26 +137,22 @@ void Character::equip(AMateria* m){
 }
 
 void Character::unequip(int idx){
-    if (idx < INVENTARYMAX && idx >= 0 && this->count < MAXINVTODELETE)
-    {
-        if (this->_inventary[idx] != NULL)
-        {
-            this->_invToDelet[this->count] = this->_inventary[idx];
-            this->_inventary[idx] = NULL;
-            this->count++;
-        }
-        return ;
-    }
-    else
-    {
-        std::cout << RED << "Inventary to delete is full. Delete now Extra Materia" << std::endl;
-        delete this->_inventary[idx];
+    if (idx < 0 || idx >= INVENTARYMAX)
         return;
-    }
+    if (!this->_inventary[idx])
+        return;
+    if (this->count >= MAXINVTODELETE)
+        return;
+    this->_invToDelet[this->count] = this->_inventary[idx];
+    this->_inventary[idx] = NULL;
+    this->count++;
+    return;
 }
 
 void Character::use(int idx, ICharacter& target){
-    if (idx < INVENTARYMAX && this->_inventary[idx] != NULL)
+    if (idx < 0 || idx >= INVENTARYMAX)
+        return;
+    if (this->_inventary[idx] != NULL)
     {
         this->_inventary[idx]->use(target);
         return ;

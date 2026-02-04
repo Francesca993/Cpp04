@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 22:11:35 by francesca         #+#    #+#             */
-/*   Updated: 2026/01/29 11:55:56 by francesca        ###   ########.fr       */
+/*   Updated: 2026/02/04 11:21:43 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,3 +51,4 @@ std::string Cat::getIdea(int index) const{
 void Cat::setIdea(int index, std::string idea){
     this->_brain->setIdea(index, idea);
 }
+

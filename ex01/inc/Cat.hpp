@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Cat.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 22:14:58 by francesca         #+#    #+#             */
-/*   Updated: 2026/01/29 11:55:26 by francesca        ###   ########.fr       */
+/*   Updated: 2026/02/04 11:25:22 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,6 @@ class Cat : public Animal{
     void makeSound() const;
     
     //Getters
-    void printIdeas() const;
     std::string getIdea(int index) const;
     void setIdea(int index, std::string idea);
 };

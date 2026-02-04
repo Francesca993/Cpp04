@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 21:45:00 by francesca         #+#    #+#             */
-/*   Updated: 2026/01/29 15:03:33 by francesca        ###   ########.fr       */
+/*   Updated: 2026/02/04 11:55:21 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ class Animal{
     virtual ~Animal();
 
     virtual void makeSound() const = 0;
-    std::string getType();
+    std::string getType() const;
 };
 
 #endif

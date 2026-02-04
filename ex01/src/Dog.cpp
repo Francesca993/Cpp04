@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Dog.cpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 22:11:35 by francesca         #+#    #+#             */
-/*   Updated: 2026/01/29 11:57:00 by francesca        ###   ########.fr       */
+/*   Updated: 2026/02/04 11:25:18 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,6 @@ Dog::~Dog(){
 
 void Dog::makeSound() const {
     std::cout << RED << "Dog does: BAU BAU!" << RESET << std::endl;
-}
-
-void Dog::printIdeas() const {
-    this->_brain->printIdeas();
 }
 
 std::string Dog::getIdea(int index) const{
