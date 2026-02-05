@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   Animal.cpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 21:48:54 by francesca         #+#    #+#             */
-/*   Updated: 2026/01/29 15:03:49 by francesca        ###   ########.fr       */
+/*   Updated: 2026/02/04 11:55:31 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,6 @@ Animal::~Animal(){
 //     std::cout << GREEN << "Default Animal doesn't do any sounds!" << RESET << std::endl;
 // }
 
-std::string Animal::getType(){
+std::string Animal::getType() const{
     return(this->type);
 }

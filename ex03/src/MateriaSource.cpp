@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   MateriaSource.cpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/04 09:20:39 by francesca         #+#    #+#             */
-/*   Updated: 2026/02/04 10:43:19 by francesca        ###   ########.fr       */
+/*   Updated: 2026/02/04 12:29:59 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,11 +48,12 @@ void MateriaSource::learnMateria(AMateria* src){
         {
             if (this->_templates[i] == NULL)
             {
-                this->_templates[i] = src->clone();
+                this->_templates[i] = src;
                 return;
             }
         }
-        std::cout << RED << "Templates Full. Delete Materia." << std::endl;
+        std::cout << RED << "Templates Full. Delete Materia to exclude leaks." << std::endl;
+        delete src;
         return ;
     }
     std::cout << RED << "INvalid Materia." << std::endl;
@@ -71,7 +72,7 @@ AMateria* MateriaSource::createMateria(std::string const & type){
     int i = 0;
     while (i < MAXSRC)
     {
-        if (type == _templates[i]->getType() && _templates[i])
+        if (_templates[i] && type == _templates[i]->getType())
             return(this->_templates[i]->clone());
         else    
             i++;

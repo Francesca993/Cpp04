@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   MateriaSource.hpp                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/02/02 18:15:01 by francesca         #+#    #+#             */
-/*   Updated: 2026/02/04 10:26:29 by francesca        ###   ########.fr       */
+/*   Updated: 2026/02/04 12:12:31 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 
 class MateriaSource :public IMateriaSource {
     private:
-    AMateria* _templates[4];
+    AMateria* _templates[MAXSRC];
     
     public:
     MateriaSource();

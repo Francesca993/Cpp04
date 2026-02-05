@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: francesca <francesca@student.42.fr>        +#+  +:+       +#+         #
+#    By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/04 21:38:50 by francesca         #+#    #+#              #
-#    Updated: 2026/01/29 15:00:15 by francesca        ###   ########.fr        #
+#    Updated: 2026/02/04 11:00:14 by fmontini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -94,7 +94,7 @@ $(NAME):		$(OBJS)
 clean:
 				@echo "$(RED)🧹 Cleaning object files...$(RESET)"
 				@$(RM) $(OBJS)
-				@$(RM) -r $(OBJS_DIR)
+				@$(RM) -rf $(OBJS_DIR)
 				@echo "$(GREEN)✓ Clean complete!$(RESET)"
 
 # Clean object files and remove the executable

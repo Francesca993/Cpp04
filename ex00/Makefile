@@ -6,7 +6,7 @@
 #    By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/04 21:38:50 by francesca         #+#    #+#              #
-#    Updated: 2026/01/27 12:50:34 by fmontini         ###   ########.fr        #
+#    Updated: 2026/02/04 11:00:03 by fmontini         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -106,7 +106,7 @@ $(NAME):		$(OBJS)
 clean:
 				@echo "$(RED)🧹 Cleaning object files...$(RESET)"
 				@$(RM) $(OBJS)
-				@$(RM) -r $(OBJS_DIR)
+				@$(RM) -rf $(OBJS_DIR)
 				@echo "$(GREEN)✓ Clean complete!$(RESET)"
 
 # Clean object files and remove the executable

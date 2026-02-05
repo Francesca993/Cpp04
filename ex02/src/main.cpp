@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: francesca <francesca@student.42.fr>        +#+  +:+       +#+        */
+/*   By: fmontini <fmontini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/04 22:17:15 by francesca         #+#    #+#             */
-/*   Updated: 2026/01/29 15:19:53 by francesca        ###   ########.fr       */
+/*   Updated: 2026/02/04 11:59:43 by fmontini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,7 @@ int main()
     
     if (Dog* d = dynamic_cast<Dog*>(a))
     {
-        d->printIdeas();   // ✅ ora sì
+        d->printIdeas();
     }
     delete a;
     delete b;
